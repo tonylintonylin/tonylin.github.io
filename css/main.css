@@ -1,3 +1,7 @@
+#loading {
+    position: absolute; width: 100%; height: 100%; background: url('images/name.gif') no-repeat center center;
+}
+
 .scroll-top {
     z-index: 1049;
     position: fixed;

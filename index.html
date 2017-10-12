@@ -5,10 +5,16 @@
 
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Tony Lin's personal site.">
+    <meta name="description" content="Hi, my name is Tony.">
     <meta name="keywords" content="Tony, tonylin, Tony Lin">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Tony Lin">
+
+    <meta property="og:title" content="Hi!" />
+    <meta property="og:type" content="personal website" />
+    <meta property="og:url" content="lintony.com" />
+    <meta property="og:image" content="avatar.jpg" />
+    <meta property="og:description" content="Hi, my name is Tony." />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
@@ -19,10 +25,13 @@
     <link rel="stylesheet" href="css/main.css">
 
     <!-- font-awesome -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- icon -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/png" href="/images/favicon.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon180.png"
+
 
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107289329-1"></script>
@@ -34,7 +43,9 @@
       gtag('config', 'UA-107289329-1');
     </script>
 
+  </head>
   <body id="page-top" class="index">
+    <div id="loading"></div>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -46,7 +57,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top"><img src="images/logoGIF.gif" style="width:100px;height:45px;" onclick="$(window).scrollTop(0);"/>
+                <a class="navbar-brand"><img src="images/name.gif" alt="Tony Lin" style="width:100px;height:45px;" onclick="$(window).scrollTop(0);"/>
                 </a>
             </div>
 
@@ -57,7 +68,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="docs/TONY LIN resume.pdf">Resume</a>
+                        <a href="https://drive.google.com/open?id=0B6jpbAiiGviPS2RLS0FtTERZa0E" target="_blank">Resume</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#timeline">Timeline</a>
@@ -90,7 +101,7 @@
                                   <a href="https://github.com/tonylintonylin" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
                               </li>
                               <li>
-                                  <a href="https://www.linkedin.com/in/lintony" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                                  <a href="https://www.linkedin.com/in/lin-tony/" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                               </li>
                               <li>
                                   <a href="mailto:tonylinbusiness@gmail.com?subject=Hello Tonyn!&body=Hi,I found you from your personal website." class="btn-social btn-outline"><i class="fa fa-fw fa-envelope"></i></a>
@@ -98,6 +109,10 @@
                           </ul>
                       </div>
                   </div>
+                  <div id="quoteContainer">
+    <p></p>
+    <p id="quoteName"></p>
+  </div>
                 </div>
             </div>
         </div>
@@ -110,7 +125,7 @@
           <li>
             <div class="timeline-badge">
               <a href="http://www.astrology-zodiac-signs.com/zodiac-signs/pisces/" target="_blank">
-                <img src="images/baby.jpg" alt="Picture">
+                <img src="images/baby.jpg" alt="Picture of a Baby lol">
               </a>
             </div>
           <div class="timeline-panel">
@@ -135,7 +150,7 @@
           <li class="timeline-inverted">
             <div class="timeline-badge">
               <a href="http://bths.edu/" target="_blank">
-                <img src="images/bths.jpg" alt="Bths">
+                <img src="images/techlogo.png" alt="BTHS Icon">
               </a>
             </div>
             <div class="timeline-panel">
@@ -309,10 +324,10 @@
                     <span class="badge">Firebase</span>
                 </p>
                 <p>
-                    <a href="https://devpost.com/software/cloutfit" class="btn btn-default" role="button">
+                    <a href="https://devpost.com/software/cloutfit" class="btn btn-default" role="button" target="_blank">
                         <img src="images/devpost-icon.png" width="16px"/>View Project
                     </a>
-                    <a href="https://github.com/DanVersa/Cloutfit" class="btn btn-default" role="button">
+                    <a href="https://github.com/DanVersa/Cloutfit" class="btn btn-default" role="button" target="_blank">
                         <img src="images/github-icon.png" width="16px"/>View Code
                     </a>
                 </p>
@@ -347,12 +362,22 @@
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
+
+    <script>
+      $(window).ready(function() {
+      $('#loading').hide();
+      });
+    </script>
+
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Quotes -->
+    <script src="js/quotes.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
